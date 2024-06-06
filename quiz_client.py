@@ -25,7 +25,7 @@ def recieve():
 
 def write():
     while True:
-        message = '{} : {}'.format(name,input(''))
+        message = input('')
         client.send(message.encode('utf-8'))
 
 recieve_thread = Thread(target= recieve)
